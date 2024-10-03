@@ -2,7 +2,7 @@
 Web application used for monitoring and getting plant information using MEAN architecture.
 
 ## 📝 To-Do List
-1. **Part1 (MEAN, HTML, CSS)**
+1. **MEAN, HTML, CSS**
    - [ ] Implement a basic HTML structure and CSS for styling the UI.
    - [ ] Develop a responsive design for the web app’s user interface.
 
