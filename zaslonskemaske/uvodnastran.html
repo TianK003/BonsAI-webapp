@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sl" xml:lang="sl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Uvodna stran</title>
+    <link rel="stylesheet" href="styles/uvodnastran.css"> <!-- Link to external CSS file -->
+    <script src="scripts/uvodnastran.js" defer></script> <!-- Link to the new JS file -->
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">O aplikaciji</a>
+        <a href="#features">Funkcionalnosti</a>
+        <a href="#contact">Kontakt</a>
+        <a href="prijava.html">Prijava</a>
+        <a href="signup.html">Registracija</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <header class="header" id="header">
+        <h1>BonsAI-webapp</h1>
+        <p class="tagline">Vaš pametni spremljevalec za rastline</p>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="about" id="about">
+                <h2>O naši aplikaciji</h2>
+                <p>
+                    BonsAI-webapp je spletna aplikacija, ki omogoča enostavno spremljanje in pridobivanje informacij o vaših rastlinah.
+                    Razvita je bila z uporabo MEAN arhitekture (MongoDB, Express.js, Angular, Node.js), kar zagotavlja hitro in odzivno uporabniško izkušnjo.
+                </p>
+            </section>
+
+            <section class="features" id="features">
+                <h2>Funkcionalnosti</h2>
+                <ul>
+                    <li>Pridobivanje podatkov o rastlinah</li>
+                    <li>Spremljanje zdravja rastlin</li>
+                    <li>Osebne nastavitve in prilagoditve</li>
+                    <li>Opozorila in nasveti za nego rastlin</li>
+                </ul>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Kontakt</h2>
+                <p>Če imate vprašanja, nas kontaktirajte preko <a href="mailto:info@bonsaiwebapp.com">info@bonsaiwebapp.com</a>.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 BonsAI-webapp. Vse pravice pridržane.</p>
+    </footer>
+</body>
+</html>
