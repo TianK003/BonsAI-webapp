@@ -1,112 +1,135 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margin */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-}
-
-/* backgrund */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('images/monsterawallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* behind the content */
-}
-
-/* transparent overlay bc we want the background photo to be transpaernt */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 0; /* above backgr bbut below content */
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
 }
 
 
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    position: relative;
-    z-index: 1; /* above the overlay */
+/* Header Styles */
+.header {
+    text-align: center; /* Center align header text */
+    margin: 40px 0; /* Margin for spacing */
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.header h1 {
+    font-size: 5rem; /* Size of the main heading */
+    color: #298063; /* Bootstrap primary color */
+}
+
+.container {
+    flex: 1; /* Allow the container to grow and take up available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Match the background of the card */
+    padding: 10px 0; /* Padding for the footer */
+}
+
+/* Body Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+
+
+
+
+/* styles/custom.css */
+
+/* Body Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+.header {
+    text-align: center; /* Center align header text */
+    margin: 40px 0; /* Margin for spacing */
+}
+
+.card {
+    margin-top: 10px; /* Add a small margin to create some space below the header */
+}
+
+
+.header h1 {
+    font-size: 5rem; /* Size of the main heading */
+    color: #298063; /* Bootstrap primary color */
+}
+
+.header .tagline {
+    font-size: 1.25rem; /* Smaller size for the tagline */
+    color: #6c757d; /* Bootstrap secondary color */
+    margin-top: 10px; /* Spacing above tagline */
+}
+
+/* Section Styles */
+section {
+    margin: 40px 0; /* Margin for spacing between sections */
+    padding: 20px; /* Padding inside sections */
+    background-color: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* White text color in footer */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow under navbar */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* styles/uvodnastran.css */
+
+.custom-btn {
+    background-color: #298063; /* Change to your desired color */
+    color: white; /* Text color */
+}
+
+.custom-btn:hover {
+    background-color: #2980636c; /* Darker shade on hover */
+    color: white
+}
+
+/* Increase space between buttons */
+.btn-space {
+    margin-right: 15px; /* Adjust this value for more or less spacing */
+}
+
+
+.card {
+    margin-top: 10px; /* Adjust the space above the card */
+    padding: 0px; /* Add padding to the card for more space inside */
+    width: 30rem; /* Set card width */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Add space between form elements */
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #38393a;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.signup-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2196F3; /* Blue color for the signup button */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px; /* Space above the button */
-}
-
-.signup-button:hover {
-    background-color: #1976D2; /* Darker blue on hover */
+.card-header {
+    font-size: 30px;
 }

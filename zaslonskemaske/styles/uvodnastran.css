@@ -1,72 +1,76 @@
+/* styles/custom.css */
+
+/* Body Styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+.header {
+    text-align: center; /* Center align header text */
+    margin: 40px 0; /* Margin for spacing */
+}
+
+.header h1 {
+    font-size: 5rem; /* Size of the main heading */
+    color: #298063; /* Bootstrap primary color */
+}
+
+.header .tagline {
+    font-size: 1.25rem; /* Smaller size for the tagline */
+    color: #6c757d; /* Bootstrap secondary color */
+    margin-top: 10px; /* Spacing above tagline */
+}
+
+/* Section Styles */
+section {
+    margin: 40px 0; /* Margin for spacing between sections */
+    padding: 20px; /* Padding inside sections */
+    background-color: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* White text color in footer */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow under navbar */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
 /* styles/uvodnastran.css */
 
-body {
-    font-family: "Lato", sans-serif;
-    margin: 0;
+.custom-btn {
+    background-color: #298063; /* Change to your desired color */
+    color: white; /* Text color */
 }
 
-.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.custom-btn:hover {
+    background-color: #2980636c; /* Darker shade on hover */
+    color: white
 }
 
-.tagline {
-    font-style: italic;
+/* Increase space between buttons */
+.btn-space {
+    margin-right: 15px; /* Adjust this value for more or less spacing */
 }
 
-.sidenav {
-    height: 100%;
-    width: 0; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-h2 {
-    color: #4CAF50;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-/* Responsive design */
-@media screen and (max-height: 450px) {
-    .sidenav { padding-top: 15px; }
-    .sidenav a { font-size: 18px; }
-}

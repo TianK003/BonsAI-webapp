@@ -1,95 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margin */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
 }
 
-/* Background */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('images/monsterawallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* behind the content */
+/* Header Styles */
+.header {
+    text-align: center; /* Center align header text */
+    margin: 40px 0; /* Margin for spacing */
 }
 
-/* Transparent overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 0; /* above background but below content */
+.header h1 {
+    font-size: 5rem; /* Size of the main heading */
+    color: #298063; /* Bootstrap primary color */
 }
 
-.signup-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    position: relative;
-    z-index: 1; /* above the overlay */
+.header .tagline {
+    font-size: 1.25rem; /* Smaller size for the tagline */
+    color: #6c757d; /* Bootstrap secondary color */
+    margin-top: 10px; /* Spacing above tagline */
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.container {
+    flex: 1; /* Allow the container to grow and take up available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.card {
+    margin-top: 10px; /* Space above the card */
+    padding: 20px; /* Padding for more space inside the card */
+    width: 30rem; /* Set card width */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Add space between form elements */
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+.footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* White text color in footer */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/* Button styles */
+.custom-btn {
+    background-color: #298063; /* Change to your desired color */
+    color: white; /* Text color */
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+.custom-btn:hover {
+    background-color: #2980636c; /* Darker shade on hover */
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    color: #38393a;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-a:hover {
-    text-decoration: underline;
 }
