@@ -10,53 +10,70 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Bootstrap JS if not already included -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+<body data-bs-spy="scroll" data-bs-target="#navbarColor03" data-bs-offset="70">
+
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="light" style="background-color: rgba(255, 255, 255, 0.9);">
+
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img src="styles/images/plant.png" alt="Brand Logo" style="height: 50px;">
+            </a>
+            <a class="navbar-brand" href="#">BonsAI-webapp</a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
+                <!-- Center-align the nav items by adding mx-auto to the ul element -->
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">O nas
+                        <a class="nav-link active" href="#header">O nas
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cenik</a>
+                        <a class="nav-link" href="#cenik">Cenik</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    <!-- 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">O nas</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        
+                    -->
                 </ul>
-            
+
+                <!-- Buttons on the right side -->
                 <button type="button" class="btn custom-btn btn-space" onclick="location.href='prijava.html'">Prijava</button>
                 <button type="button" class="btn custom-btn" onclick="location.href='signup.html'">Registracija</button>
-
-
             </div>
         </div>
     </nav>
     
-    <header class="header" id="header">
+    <header class="header" id="header" style="padding-top: 100px;">
         <h1>BonsAI-webapp</h1>
         <p class="tagline">Vaš pametni spremljevalec za rastline</p>
     </header>
 
     <div class="container">
         <main class="main-content">
-            <section class="about" id="about">
+            <section class="about section" id="about">
                 <h2>O naši aplikaciji</h2>
                 <p>
                     BonsAI-webapp je spletna aplikacija, ki omogoča enostavno spremljanje in pridobivanje informacij o vaših rastlinah.
@@ -64,22 +81,87 @@
                 </p>
             </section>
 
-            <section class="features" id="features">
+            <section class="features section" id="features">
                 <h2>Funkcionalnosti</h2>
-                <ul>
-                    <li>Pridobivanje podatkov o rastlinah</li>
-                    <li>Spremljanje zdravja rastlin</li>
-                    <li>Osebne nastavitve in prilagoditve</li>
-                    <li>Opozorila in nasveti za nego rastlin</li>
-                </ul>
+                <p>
+                    BonsAI-webapp omogoča pridobivanje podatkov o rastlinah, spremljanje njihovega zdravja, osebne nastavitve in prilagoditve, ter opozorila in nasvete za nego rastlin. Naša aplikacija je zasnovana tako, da uporabnikom nudi celovite informacije in orodja za optimalno nego rastlin.
+                </p>
+            </section>
+            
+            <section class="cenik section" id="cenik">
+                <h2>Cenik</h2>
+                <div class="row justify-content-center">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4">
+                        <div class="card pricing-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Basic</h3>
+                                <p class="price">Brezplačno</p>
+                                <hr>
+                                <ul class="features-list">
+                                    <li>Pridobivanje osnovnih podatkov o rastlinah</li>
+                                    <li>Opozorila za zalivanje</li>
+                                    <li>Prijava na novice</li>
+                                </ul>
+                                <button class="btn custom-btn">Izberi Basic</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pro Plan -->
+                    <div class="col-md-4">
+                        <div class="card pricing-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Pro</h3>
+                                <p class="price">€5 / mesec</p>
+                                <hr>
+                                <ul class="features-list">
+                                    <li>Napredni podatki o rastlinah</li>
+                                    <li>Spremljanje zdravja rastlin</li>
+                                    <li>Osebne nastavitve in prilagoditve</li>
+                                    <li>Opozorila za nego</li>
+                                </ul>
+                                <button class="btn custom-btn">Izberi Pro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="contact" id="contact">
+            
+            <section class="social-media section">
+                <h2>Sledite nam na družbenih omrežjih</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                </div>
+            </section>
+            
+            <section class="newsletter section">
+                <h2>Prijavite se na naše novice</h2>
+                <form action="submit_newsletter" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Vnesite svoj email" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn custom-btn">Prijava</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="contact section" id="contact">
                 <h2>Kontakt</h2>
                 <p>Če imate vprašanja, nas kontaktirajte preko <a href="mailto:info@bonsaiwebapp.com">info@bonsaiwebapp.com</a>.</p>
             </section>
+            
+            
+            
         </main>
     </div>
+
+    <div id="emptyspace"></div>
 
     <footer class="footer">
         <p>&copy; 2024 BonsAI-webapp. Vse pravice pridržane.</p>

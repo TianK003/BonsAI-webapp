@@ -1,16 +1,17 @@
-// JavaScript to toggle the 'show' class on the dropdown
-const dropdownMenu = document.getElementById('dropdownMenu');
-const dropdownContent = document.getElementById('dropdownContent');
+$(document).ready(function(){
+    // Adding the scrollspy function to the body with offset adjustment
+    $('body').scrollspy({ target: '#navbarColor03', offset: 70 });
 
-// Toggle show class when clicking the dropdown
-dropdownMenu.addEventListener('click', function (e) {
-    e.preventDefault();  // Prevent default link behavior
-    ropdownContent.classList.toggle('show');
-});
-
-// Close the dropdown if clicked outside
-document.addEventListener('click', function (event) {
-    if (!dropdownMenu.contains(event.target) && !dropdownContent.contains(event.target)) {
-        dropdownContent.classList.remove('show');
-}
+    // Optional: If you want to add smooth scrolling
+    $(".navbar a.nav-link").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 });

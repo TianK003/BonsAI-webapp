@@ -1,0 +1,30 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+}
+
+
+.custom-green {
+    display: flex;
+    align-items: center; /* Align logo and text */
+    color: black; /* Theme color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.bg-custom-green {
+    background-color: #298063 !important;
+}
+
+.border-custom-green {
+    border-color: #298063 !important;
+}
+
+.btn-outline-custom-green {
+    color: #298063 !important;
+    border-color: #298063 !important;
+}
+
+.btn-outline-custom-green:hover {
+    background-color: #298063 !important;
+    color: #ffffff !important;
+}
