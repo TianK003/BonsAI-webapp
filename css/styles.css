@@ -1,0 +1,10 @@
+.footer {
+    background-color: #4CAF50; /* Green color for footer */
+    color: white; /* White text color for contrast */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+}
