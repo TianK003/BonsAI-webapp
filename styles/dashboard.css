@@ -28,3 +28,17 @@
     background-color: #298063 !important;
     color: #ffffff !important;
 }
+
+.custom-btn {
+    background-color: #298063;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #298063b0;
+    color: white
+}
+
+.btn-space {
+    margin-right: 15px;
+}

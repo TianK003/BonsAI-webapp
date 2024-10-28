@@ -1,8 +1,3 @@
-// signup.js
-
-// Simulated user database for demonstration purposes
-const users = [];
-
 // Handle the signup submission
 function handleSignup(event) {
     
