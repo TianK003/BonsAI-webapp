@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+}
+
+body {
+    background-color: #f8f9fa; /* Light background color similar to Uvodnastran */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section Styles */
+section.prijava {
+    background-color: white; /* White background for sections */
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: auto;
+    max-width: 500px; /* Ensures form does not stretch too wide */
+    text-align: center; /* Center align text */
+}
+
+/* Header Styles */
+h2 {
+    color: #298063; /* Green color from Uvodnastran */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Input and Label Styles */
+input[type="text"], input[type="password"], .form-control {
+    width: 100%; /* Full width of the form */
+    padding: 8px;
+    border: 1px solid #ced4da; /* Subtle border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Button Styles */
+.btn.custom-btn {
+    background-color: #298063; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn.custom-btn:hover {
+    background-color: #298063c4; /* Darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #7e868d; /* Secondary button color from Bootstrap */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #7e868dd0; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* White text color in footer */
+    width: 100%; /* Full width */
+    position: absolute;
+    bottom: 0; /* Align to bottom */
+    left: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center; /* Center navbar content horizontally */
+    align-items: center; /* Align navbar content vertically */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Align logo and text */
+    color: black; /* Theme color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.navbar-brand img {
+    height: 50px; /* Consistent height for logo */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+#forgot-password a {
+    font-size: 0.85rem; /* Smaller font size */
+    color: #7e868d; /* Green color, adjust the shade as needed */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+#forgot-password a:hover {
+    text-decoration: underline; /* Re-add underline on hover for better user interaction */
+}
